@@ -137,11 +137,10 @@ body::after {
   font-variant-numeric: tabular-nums;
   color: var(--text-primary);
   white-space: nowrap;
+  opacity: 1;
+  transition: opacity 0.22s ease;
 }
-.goal-ticker-row.is-leaving  { animation: ticker-leave 0.45s cubic-bezier(0.55, 0, 0.55, 1) forwards; }
-.goal-ticker-row.is-entering { animation: ticker-enter 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
-@keyframes ticker-leave { from { opacity: 1; transform: translateY(0); } to { opacity: 0; transform: translateY(-100%); } }
-@keyframes ticker-enter { from { opacity: 0; transform: translateY(100%); } to { opacity: 1; transform: translateY(0); } }
+.goal-ticker-row.is-fading { opacity: 0; }
 .goal-ticker-status {
   display: inline-flex; justify-content: center;
   width: 18px;

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="theme-color" content="#0a0a0b">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Finances</title>
+<title>Finanzen</title>
 <script src="topbar.js" defer></script>
 <style>
 :root {
@@ -1572,9 +1572,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 <div class="shell">
 
 <!-- ===== BACK BUTTON ===== -->
-<a href="index.html" class="fin-back-btn" aria-label="Back to dashboard">
+<a href="index.html" class="fin-back-btn" aria-label="Zurück zum Dashboard">
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-  <span>Back</span>
+  <span>Zurück</span>
 </a>
 
 <!-- ===== FINANCE TICKER (rotating subscription renewals) ===== -->
@@ -1799,66 +1799,66 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   <!-- Items list -->
   <div class="ord-section-h">
-    <span class="ord-section-label">ITEMS ON THE WAY</span>
-    <span class="ord-section-count" id="ordCount">0 items</span>
+    <span class="ord-section-label">BESTELLUNGEN UNTERWEGS</span>
+    <span class="ord-section-count" id="ordCount">0 Artikel</span>
   </div>
   <div id="ordList"></div>
   <div class="ord-empty-card" id="ordEmpty">
     <div class="ord-empty-icon">📦</div>
-    <div class="ord-empty-title">Nothing on the way</div>
-    <div class="ord-empty-sub">Log an order above. Pick the account it comes out of, the expected arrival date, and the dashboard will show what % of your net worth it costs.</div>
+    <div class="ord-empty-title">Nichts unterwegs</div>
+    <div class="ord-empty-sub">Logge oben eine Bestellung. Wähle das Konto, das erwartete Ankunftsdatum, und das Dashboard zeigt an, wie viel % deines Nettovermögens es kostet.</div>
   </div>
 </div>
 
 <!-- ===== WISHLIST ===== -->
 <div class="section" data-section="wish">
   <div class="section-title">
-    <span class="section-title-text">WISHLIST</span>
+    <span class="section-title-text">WUNSCHLISTE</span>
   </div>
   <!-- Hero card with stats -->
   <div class="card wish-hero">
     <div class="wish-hero-top">
       <div>
-        <div class="wish-hero-eyebrow">WISHLIST TOTAL</div>
+        <div class="wish-hero-eyebrow">WUNSCHLISTE GESAMT</div>
         <div class="wish-hero-num" id="wishTotal">CHF 0</div>
       </div>
       <div class="wish-hero-pct-wrap">
-        <div class="wish-hero-pct-label">% OF NET WORTH</div>
+        <div class="wish-hero-pct-label">% VOM NETTOVERMÖGEN</div>
         <div class="wish-hero-pct-num" id="wishPctOfNwHero">—</div>
       </div>
     </div>
     <div class="wish-hero-bar">
       <div class="wish-hero-bar-fill" id="wishHeroFill" style="width:0%"></div>
     </div>
-    <div class="wish-hero-foot" id="wishPctOfNw">Add net worth first to see this as a %</div>
+    <div class="wish-hero-foot" id="wishPctOfNw">Nettovermögen zuerst hinzufügen, um dies als % zu sehen</div>
   </div>
 
   <!-- Add row -->
   <div class="card wish-add-card">
-    <div class="wish-add-eyebrow">+ ADD AN ITEM</div>
+    <div class="wish-add-eyebrow">+ ARTIKEL HINZUFÜGEN</div>
     <div class="wish-add-row">
-      <input type="text"   id="wishName"   placeholder="Item name (e.g. New iPhone Pro Max)" class="wish-input wish-input-name">
-      <input type="number" id="wishAmount" placeholder="Cost" step="0.01" class="wish-input wish-input-amt">
+      <input type="text"   id="wishName"   placeholder="Artikelname (z.B. Neues iPhone Pro Max)" class="wish-input wish-input-name">
+      <input type="number" id="wishAmount" placeholder="Kosten" step="0.01" class="wish-input wish-input-amt">
       <select id="wishCurrency" class="wish-input wish-input-ccy">
         <option value="CHF">CHF</option>
         <option value="USD">USD</option>
         <option value="EUR">EUR</option>
         <option value="GBP">GBP</option>
       </select>
-      <button class="wish-add-btn" id="wishAddBtn" onclick="window.__addWish && window.__addWish()">+ Add</button>
+      <button class="wish-add-btn" id="wishAddBtn" onclick="window.__addWish && window.__addWish()">+ Hinzufügen</button>
     </div>
   </div>
 
   <!-- Items list -->
   <div class="wish-section-h">
-    <span class="wish-section-label">YOUR WISHES</span>
-    <span class="wish-section-count" id="wishCount">0 items</span>
+    <span class="wish-section-label">DEINE WÜNSCHE</span>
+    <span class="wish-section-count" id="wishCount">0 Artikel</span>
   </div>
   <div id="wishList"></div>
   <div class="wish-empty-card" id="wishEmpty">
     <div class="wish-empty-icon">🎯</div>
-    <div class="wish-empty-title">No wishes yet</div>
-    <div class="wish-empty-sub">Add anything you're saving for — the dashboard will calculate what % of your net worth it'd cost.</div>
+    <div class="wish-empty-title">Noch keine Wünsche</div>
+    <div class="wish-empty-sub">Füge alles hinzu, wofür du sparst — das Dashboard berechnet, wie viel % deines Nettovermögens es kosten würde.</div>
   </div>
 </div>
 
@@ -1868,19 +1868,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 <nav class="bottom-tabs" id="bottomTabs" aria-label="Sections">
   <button class="bot-tab active" data-tab="net">
     <span class="bot-tab-icon">📊</span>
-    <span class="bot-tab-label">Net Worth</span>
+    <span class="bot-tab-label">Nettovermögen</span>
   </button>
   <button class="bot-tab" data-tab="subs">
     <span class="bot-tab-icon">🔁</span>
-    <span class="bot-tab-label">Subs</span>
+    <span class="bot-tab-label">Abos</span>
   </button>
   <button class="bot-tab" data-tab="incoming">
     <span class="bot-tab-icon">📦</span>
-    <span class="bot-tab-label">Orders</span>
+    <span class="bot-tab-label">Bestellungen</span>
   </button>
   <button class="bot-tab" data-tab="wish">
     <span class="bot-tab-icon">🎯</span>
-    <span class="bot-tab-label">Wishlist</span>
+    <span class="bot-tab-label">Wunschliste</span>
   </button>
 </nav>
 
@@ -1970,7 +1970,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     const symbol = currencyEl ? currencyEl.value : 'CHF';
     const rate = exchangeRates[symbol] || 1;
     const num = (Number(amountCHF) || 0) * rate;
-    return symbol + ' ' + num.toLocaleString('en-US', { minimumFractionDigits: num % 1 === 0 ? 0 : 2, maximumFractionDigits: 2 });
+    return symbol + ' ' + num.toLocaleString('de-DE', { minimumFractionDigits: num % 1 === 0 ? 0 : 2, maximumFractionDigits: 2 });
   }
 
   function renderNetWorthCategory(cat) {
